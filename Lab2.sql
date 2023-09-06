@@ -4,17 +4,17 @@
 CREATE TABLE IF NOT EXISTS professor
 (
     p_email VARCHAR(50) NOT NULL,
-    p_name VARCHAR(100),
-    office VARCHAR(50) UNIQUE,
+    p_name VARCHAR(100) NOT NULL,
+    office VARCHAR(50) NOT NULL UNIQUE,
     PRIMARY KEY(p_email)
 );
 
 CREATE TABLE IF NOT EXISTS course
 (
     c_number VARCHAR(50) NOT NULL,
-    c_name VARCHAR(100),
-    room VARCHAR(10),
-    p_email VARCHAR(50),
+    c_name VARCHAR(100) NOT NULL,
+    room VARCHAR(10) NOT NULL,
+    p_email VARCHAR(50) NOT NULL,
     PRIMARY KEY(c_number)
 );
 
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS enroll
 CREATE TABLE IF NOT EXISTS student
 (
     s_email VARCHAR(50) NOT NULL,
-    s_name VARCHAR(100),
+    s_name VARCHAR(100) NOT NULL,
     major VARCHAR(10) NOT NULL,
     PRIMARY KEY(s_email)
 );

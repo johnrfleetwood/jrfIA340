@@ -37,4 +37,11 @@ for the course table
 */
 
 --2.6 
-
+UPDATE course
+SET p_email = 'p3@jmu.edu'
+WHERE p_email = 'p1@jmu.edu';
+DELETE from professor
+WHERE p_email = 'p1@jmu.edu';
+/*
+You must update the course table first then you can edit the professor table. 
+*/

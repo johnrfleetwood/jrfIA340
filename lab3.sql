@@ -45,3 +45,11 @@ WHERE p_email = 'p1@jmu.edu';
 /*
 You must update the course table first then you can edit the professor table. 
 */
+
+--2.7
+
+--2.8
+
+--2.9
+
+--2.10

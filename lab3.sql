@@ -47,9 +47,20 @@ You must update the course table first then you can edit the professor table.
 */
 
 --2.7
+select * from enroll
 
 --2.8
+select c_number, count(*) as num_student
+from enroll 
+group by c_number
+order by num_student desc
+limit 1;
+
 
 --2.9
+select professor.p_name, course.c_name
+from professor
+inner join course
+on professor.p_email = course.p_email
 
 --2.10
